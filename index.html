@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/normallize.css"/>
     <link rel="stylesheet" href="style/main.css"/>
+    <link href='style/bootstrap.min.css' rel='stylesheet'>
+    <script src='js/jquery-1.4.2.min.js' type='text/javascript'></script>
+    <script src='js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='js/bg.js' type='text/javascript'></script>
     <title>Kramerica</title>
 </head>
 <body>
 <section class="welcome">
+    <img src="img/welcome-bg.jpg" id="bg" alt=""/>
 
-    <video src="img/main-video.webm" autoplay loop>
-    </video>
-    <header class="header">
+    <!--<video class="container" src="img/main-video.webm" autoplay loop>-->
+    <!--</video>-->
+    <header class="header col-md-10 col-md-offset-1">
         <a href="index.html">
             <img src="img/logo.png" class="logo" width="140" height="52" alt=""/>
         </a>
@@ -22,40 +27,40 @@
             <a href="#contact" class="nav-list">Contact</a>
         </nav>
     </header>
-    <div class="welcome-content-center">
+    <div class="">
         <h1 class="welcome-title">Welcome To Kramerica Industries</h1>
 
-        <div>
-            <a href="" class="explore">
+        <a href="" class="explore">
             <img src="img/explore.png" width="60" height="60" alt=""/>
+
             <p>Explore</p>
         </a>
-        </div>
     </div>
 </section>
-<section id="about">
-    <div class="about-content-center">
-        <h2 class="about-title">About</h2>
+<section class="about">
+    <h2 class="about-title">About</h2>
 
-        <p class="about-content">
+    <div class="container">
+        <p class="about-content col-md-8 col-md-offset-2">
             This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
             sollicitudin,
             lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
             nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
             a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
         </p>
-        <ul class="categories">
-            <li class="categories-list">
+
+        <ul class="categories row">
+            <li class="categories-list col-md-4 col-md-offset-0 ">
                 <img src="img/about-services.png" width="153" height="152" alt=""/>
 
                 <h3 class="categories-name">Services</h3>
 
-                <p class="categories-content">
+                <p class="categories-content ">
                     This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                     sollicitudin, lorem quis bibendum auctor,
                 </p>
             </li>
-            <li class="categories-list">
+            <li class="categories-list col-md-4 col-md-offset-0">
                 <img src="img/about-retina.png" width="153" height="152" alt=""/>
 
                 <h3 class="categories-name">Retina Display</h3>
@@ -65,7 +70,7 @@
                     sollicitudin, lorem quis bibendum auctor,
                 </p>
             </li>
-            <li class="categories-list">
+            <li class="categories-list col-md-4 col-md-offset-0">
                 <img src="img/about-full-sup.png" width="153" height="152" alt=""/>
 
                 <h3 class="categories-name">Full Support</h3>
@@ -78,115 +83,150 @@
         </ul>
     </div>
 </section>
-<section id="portfolio">
-    <div class="portfolio-content-center">
-        <h2 class="portfolio-title">Portfolio</h2>
-        <ul class="portfolio-nav">
-            <li class="portfolio-nav-list">
-                <a href="#">All</a>
-            </li>
-            <li class="portfolio-nav-list active">
-                <a href="#">Design</a>
-            </li>
-            <li class="portfolio-nav-list"><a href="#">Web</a>
-            </li>
-            <li class="portfolio-nav-list">
-                <a href="#">Illustration</a>
-            </li>
-            <li class="portfolio-nav-list">
-                <a href="#">Motion</a>
-            </li>
-        </ul>
-        <ul class="portfolio-categories">
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+<section class="portfolio">
+    <h2 class="portfolio-title">Portfolio</h2>
+    <ul class="portfolio-nav">
+        <li class="portfolio-nav-list">
+            <a href="#">All</a>
+        </li>
+        <li class="portfolio-nav-list active">
+            <a href="#">Design</a>
+        </li>
+        <li class="portfolio-nav-list"><a href="#">Web</a>
+        </li>
+        <li class="portfolio-nav-list">
+            <a href="#">Illustration</a>
+        </li>
+        <li class="portfolio-nav-list">
+            <a href="#">Motion</a>
+        </li>
+    </ul>
+    <div class="container">
+        <ul class="portfolio-categories row">
+
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li1.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li1.jpg" width="348" height="260" alt=""/>
             </li>
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li2.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li2.jpg" width="348" height="260" alt=""/>
             </li>
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li3.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li3.jpg" width="348" height="260" alt=""/>
             </li>
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li4.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li4.jpg" width="348" height="260" alt=""/>
             </li>
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li5.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li5.jpg" width="348" height="260" alt=""/>
             </li>
-            <li class="portfolio-categories-list">
-                <div>
-                    <p class="portfolio-project-title">Project Title</p>
-                    <a href="#" class="portfolio-view-project">View Project</a>
+            <li class="portfolio-categories-list col-md-4 col-sm-6 col-xs-12">
+                <div class="portfolio-categories-item">
+                    <div class="portfolio-categories-wrap">
+                        <div class="portfolio-categories-wrap-item">
+                            <div class="portfolio-list-hover">
+                                <p class="portfolio-project-title">Project Title</p>
+                                <a href="#" class="portfolio-view-project">View Project</a>
+                            </div>
+                            <img src="img/portfolio-li6.jpg" width="348" height="260" alt=""/>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/portfolio-li6.jpg" width="348" height="260" alt=""/>
             </li>
         </ul>
     </div>
 </section>
-<section id="team">
-    <div class="team-content-center">
-        <h2 class="team-title">Team</h2>
-        <ul class="team-members">
-            <li class="team-members-list">
-                <img src="img/team-man1.png" width="220" height="220" alt=""/>
+<section class="team">
+    <h2 class="team-title">Team</h2>
+    <ul class="team-members container">
+        <li class="team-members-list col-md-4 col-md-offset-2">
+            <img src="img/team-man1.png" width="220" height="220" alt=""/>
 
-                <h3>Cosmo Kramer</h3>
+            <h3>Cosmo Kramer</h3>
 
-                <p>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor,
-                </p>
-                <a href="https://twitter.com/_cosmokramer_" target="_blank">
-                    <img src="img/twit.png" class="twit" width="59" height="58" alt=""/>
-                </a>
-                <a href="#">
-                    <img src="img/inst.png" class="instagram" width="59" height="58" alt=""/>
-                </a>
-            </li>
-            <li class="team-members-list">
-                <img src="img/team-man2.png" width="219" height="219" alt=""/>
+            <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor,
+            </p>
+            <a href="https://twitter.com/_cosmokramer_" target="_blank">
+                <img src="img/twit.png" class="twit" width="59" height="58" alt=""/>
+            </a>
+            <a href="#">
+                <img src="img/inst.png" class="instagram" width="59" height="58" alt=""/>
+            </a>
+        </li>
+        <li class="team-members-list col-md-4 col-md-offset-0">
+            <img src="img/team-man2.png" width="219" height="219" alt=""/>
 
-                <h3>George Constanza</h3>
+            <h3>George Constanza</h3>
 
-                <p>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor,
-                </p>
-                <a href="https://twitter.com/costanzaquotes" target="_blank">
-                    <img src="img/twit.png" class="twit" width="59" height="58" alt=""/>
-                </a>
-            </li>
-        </ul>
-    </div>
+            <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor,
+            </p>
+            <a href="https://twitter.com/costanzaquotes" target="_blank">
+                <img src="img/twit.png" class="twit" width="59" height="58" alt=""/>
+            </a>
+        </li>
+    </ul>
 </section>
-<section id="contact">
-    <div class="contact-content-center">
+<section class="contact">
+    <div class="container">
         <h2 class="contact-title">Contact</h2>
 
         <p class="contact-content">Please contact us and we can discuss work!</p>
 
 
-        <form action="#" method="post" class="contact-form">
+        <form action="#" method="post" class="contact-form col-md-4 col-md-offset-3">
             <p>
                 <input type="text" placeholder="Name" class="name"/>
             </p>
@@ -195,49 +235,64 @@
                 <input type="email" placeholder="Email" class="email"/>
             </p>
 
-            <p>
-                <textarea name="message" cols="22" rows="8" placeholder="Message" class="coments"></textarea>
+            <p class="comments-cont">
+                <textarea name="message" cols="15" rows="5" placeholder="Message" class="comments"></textarea>
             </p>
             <input type="submit" value="Submit" class="send-form"/>
         </form>
-        <dl>
-            <dt>Address</dt>
-            <dd>129 West 81st Street</dd>
-            <dd> New York, NY 10024</dd>
-            <dt>Email</dt>
-            <dd>giddyup@kramer.com</dd>
-            <dt>Phone</dt>
-            <dd>+1 212-532-1256</dd>
-        </dl>
+        <aside class="our-contact col-md-2 col-md-offset-1">
+            <ul>
+                <li>
+                    <p class="our-contact-title">Address</p>
+
+                    <p>129 West 81st Street
+                        New York, NY 10024</p>
+                </li>
+                <li>
+                    <p class="our-contact-title">Email</p>
+
+                    <p>giddyup@kramer.com</p>
+                </li>
+                <li>
+                    <p class="our-contact-title">Phone</p>
+
+                    <p>+1 212-532-1256</p>
+                </li>
+            </ul>
+        </aside>
     </div>
 </section>
 <footer class="footer">
-    <a href="index.html" class="footer-logo">
-        <img src="img/logo.png" width="140" height="52" alt=""/>
-    </a>
-    <address class="contact-detials">
-        <p class="contact-detials-list">
-            129 West 81st Street
-            New York, NY 10024
-        </p>
+    <div class="col-md-10 col-md-offset-1">
+        <a href="index.html">
+            <img src="img/logo.png" class="footer-logo" width="140" height="52" alt=""/>
+        </a>
+        <address class="contact-details">
+            <div class="contact-details-list">
+                <p>129 West 81st Street</p>
 
-        <p class="contact-detials-list">
-            giddyup@kramer.com
-            +1 212-532-1256
-        </p>
+                <p>New York, NY 10024</p>
+            </div>
+            <div class="contact-details-list">
+                <p>
+                    giddyup@kramer.com</p>
 
-    <div class="social-button">
-        <a href="">
-            <img src="img/twit.png" width="59" height="58" alt=""/>
-        </a>
-        <a href="">
-            <img src="img/fb.png" width="59" height="58" alt=""/>
-        </a>
-        <a href="">
-            <img src="img/inst.png" width="59" height="58" alt=""/>
-        </a>
+                <p> +1 212-532-1256
+                </p>
+            </div>
+            <div class="social-button">
+                <a href="">
+                    <img src="img/twit.png" width="59" height="58" alt=""/>
+                </a>
+                <a href="">
+                    <img src="img/fb.png" width="59" height="58" alt=""/>
+                </a>
+                <a href="">
+                    <img src="img/inst.png" width="59" height="58" alt=""/>
+                </a>
+            </div>
+        </address>
     </div>
-    </address>
 </footer>
 </body>
 </html>
